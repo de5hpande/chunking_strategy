@@ -16,3 +16,4 @@ ipykernel
 Chromadb
 python-dotenv
 langchain-ollama
+nltk

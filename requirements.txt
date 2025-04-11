@@ -11,3 +11,8 @@ faiss-cpu
 langchain_openai
 grandalf
 pypdf
+pymupdf
+ipykernel
+Chromadb
+python-dotenv
+langchain-ollama

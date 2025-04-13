@@ -23,13 +23,13 @@ Answer only with the succinct context and nothing else.
 
 class RAGPipeline:
     def __init__(self,
-                 llm_model: str = "mistral",  # ✅ Ollama mistral model name
+                 llm_model: str = "mistral",  
                  embed_model: str = "all-MiniLM-L6-v2",
                  chunk_size: int = 750,
                  chunk_overlap: int = 100,
                  chroma_db_dir: str = "chroma_store"):
 
-        # ✅ Use local LLM via Ollama
+        
         self.llm = ChatOllama(model=llm_model)
 
         self.embedding_model = HuggingFaceEmbeddings(model_name=embed_model)
@@ -101,7 +101,7 @@ class RAGPipeline:
 if __name__ == "__main__":
     pipeline = RAGPipeline(
     llm_model="mistral",  
-    embed_model="all-MiniLM-L6-v2",  # Or any SentenceTransformers model
+    embed_model="all-MiniLM-L6-v2",  
     chunk_size=750,
     chunk_overlap=100,
     chroma_db_dir="chroma_store")

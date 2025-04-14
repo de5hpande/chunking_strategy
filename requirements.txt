@@ -17,3 +17,4 @@ Chromadb
 python-dotenv
 langchain-ollama
 nltk
+nbformat
